@@ -80,13 +80,37 @@ ________________________________________________________________________________
             <GFR_FLAG>1</GFR_FLAG>
             <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
         </Configs>
-        <Configs Target="canoe,alor_interposer,alor" Package="com.HoYoverse.hkrpgoversea">
+        <Configs Target="canoe,alor_interposer,alor" Package="com.tencent.ig">
             <GFR_FLAG>1</GFR_FLAG>
-            <GFR_JANK_THRESHOLDS>1.2;1.8;2.5</GFR_JANK_THRESHOLDS>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
         </Configs>
-        <Configs Target="canoe,alor_interposer,alor" Package="com.tencent.tmgp.cf">
+        <Configs Target="canoe,alor_interposer,alor" Package="com.rekoo.pubgm">
             <GFR_FLAG>1</GFR_FLAG>
-            <GFR_JANK_THRESHOLDS>1.1;1.5;2.0</GFR_JANK_THRESHOLDS>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
+        </Configs>
+        <Configs Target="canoe,alor_interposer,alor" Package="com.vng.pubgmobile">
+            <GFR_FLAG>1</GFR_FLAG>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
+        </Configs>
+        <Configs Target="canoe,alor_interposer,alor" Package="com.pubg.krmobile">
+            <GFR_FLAG>1</GFR_FLAG>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
+        </Configs>
+        <Configs Target="canoe,alor_interposer,alor" Package="com.tencent.igce">
+            <GFR_FLAG>1</GFR_FLAG>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
+        </Configs>
+        <Configs Target="canoe,alor_interposer,alor" Package="com.tencent.igfit">
+            <GFR_FLAG>1</GFR_FLAG>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
+        </Configs>
+        <Configs Target="canoe,alor_interposer,alor" Package="com.tencent.igfitce">
+            <GFR_FLAG>1</GFR_FLAG>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
+        </Configs>
+        <Configs Target="canoe,alor_interposer,alor" Package="com.pubg.imobile">
+            <GFR_FLAG>1</GFR_FLAG>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
         </Configs>
         <Configs Target="canoe,alor_interposer,alor" Package="com.kurogame.mingchao">
             <GFR_FLAG>1</GFR_FLAG>

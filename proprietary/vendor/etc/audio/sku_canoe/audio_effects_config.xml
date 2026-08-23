@@ -19,7 +19,6 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
         <library name="misoundfx" path="libmisoundfx_aosp_aidl.so"/>
         <library name="mispatializer" path="libspatializer_aosp_aidl_sve.so"/>
         <library name="ozoaidl" path="libozoaidl.so"/>
-        <library name="lvacfs_processing" path="liblvacfsprocessingaidl.so"/>
          <!--DOLBY DAP-->
         <library name="dap_hw" path="libhwdapaidl.so"/>
         <library name="dvl" path="libdlbvolaidl.so"/>
@@ -83,7 +82,6 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
         <effect name="dlb_music_listener" library="dvl" uuid="40f66c8b-5aa5-4345-8919-53ec431aaa98"/>
         <effect name="dlb_ring_listener" library="dvl" uuid="21d14087-558a-4f21-94a9-5002dce64bce"/>
         <effect name="dlb_alarm_listener" library="dvl" uuid="6aff229c-30c6-4cc8-9957-dbfe5c1bd7f6"/>
-        <effect name="lvacfs" library="lvacfs_processing" uuid="7e384a3b-7850-4a64-a097-884250d8a838"/>
         <!--DOLBY SPATIALIZER-->
         <effect name="spatializer" library="spatializer" uuid="ccd4cf09-a79d-46c2-9aae-06a1698d6c8f"/>
         <!--DOLBY GAME-->

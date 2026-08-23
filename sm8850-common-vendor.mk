@@ -9,17 +9,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/audio/silent-3sec.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/silent-3sec.wav \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/audio/sku_canoe/adsp_sleep_monitor.conf:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_canoe/adsp_sleep_monitor.conf \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
-    vendor/xiaomi/sm8850-common/proprietary/odm/etc/cit_param_config.json:$(TARGET_COPY_OUT_ODM)/etc/cit_param_config.json \
-    vendor/xiaomi/sm8850-common/proprietary/odm/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default-spatializer.xml \
-    vendor/xiaomi/sm8850-common/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/nfc2-service-nxp.rc:$(TARGET_COPY_OUT_ODM)/etc/init/nfc2-service-nxp.rc \
+    vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
-    vendor/xiaomi/sm8850-common/proprietary/odm/etc/surfaceflinger/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/surfaceflinger/dolby_vision.cfg \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
     vendor/xiaomi/sm8850-common/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     vendor/xiaomi/sm8850-common/proprietary/odm/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.b00 \
@@ -100,8 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/odm/firmware/vpu40_2v_unsigned.mbn:$(TARGET_COPY_OUT_ODM)/firmware/vpu40_2v_unsigned.mbn \
     vendor/xiaomi/sm8850-common/proprietary/odm/firmware/vpu40_2v_v1.mbn:$(TARGET_COPY_OUT_ODM)/firmware/vpu40_2v_v1.mbn \
     vendor/xiaomi/sm8850-common/proprietary/odm/firmware/vpu40_2v_v1_unsigned.mbn:$(TARGET_COPY_OUT_ODM)/firmware/vpu40_2v_v1_unsigned.mbn \
-    vendor/xiaomi/sm8850-common/proprietary/odm/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/vendor/etc/dolby_vision.cfg \
-    vendor/xiaomi/sm8850-common/proprietary/odm/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/vendor/persist/display/dolby_vision.cfg \
     vendor/xiaomi/sm8850-common/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/sm8850-common/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/sm8850-common/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
@@ -401,7 +396,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
@@ -1459,10 +1453,8 @@ PRODUCT_PACKAGES += \
     libdisplaylog \
     libdither \
     libeyecare \
-    libfcsam \
     libflatmode \
     libfpsmonitor \
-    libframemasterintf \
     libhistprocess \
     libmfido \
     libmi-stc-HW-modulate \
@@ -1471,7 +1463,6 @@ PRODUCT_PACKAGES += \
     libmiSensorCtrl \
     libmiXmlParser \
     libmi_dspp \
-    libmiam \
     libmieventnodewatch \
     libmlipay \
     libmt \
@@ -1482,11 +1473,6 @@ PRODUCT_PACKAGES += \
     libtensorflowlite_touch_c \
     libtfacal \
     libtida \
-    libtouchreport \
-    libtouchreport_alg \
-    libtouchreport_alg_fts \
-    libtouchreport_hal \
-    libtouchreport_sensor \
     libtruetone \
     libvideomode \
     libwindns \
@@ -1495,7 +1481,6 @@ PRODUCT_PACKAGES += \
     sensors.touch.detect \
     vendor.qti.qvirt-V1-ndk \
     vendor.qti.qvirt-V2-ndk \
-    vendor.xiaomi.hardware.framemaster-V1-ndk \
     vendor.xiaomi.hardware.idmanager-V1-ndk \
     vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk \
     com.google.android.widevine.nonupdatable \
@@ -1648,7 +1633,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.camera.mivimessage-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.dynamiccameraserver.xml \
-    vendor.xiaomi.hardware.misys.common.xml \
     vendor.xiaomi.hardware.postprocservice-service.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
@@ -1723,7 +1707,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-canoe_5_2 \
     init.kernel.post_boot-canoe_6_1 \
     init.kernel.post_boot-canoe_default_6_2 \
-    init.kernel.post_boot-memory \
     init.kernel.post_boot \
     init.qcom.class_core \
     init.qcom.early_boot \
@@ -1806,8 +1789,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice.aidl \
     mlipayd \
     mtd \
-    tidad \
-    toucheventcheck
+    tidad
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \

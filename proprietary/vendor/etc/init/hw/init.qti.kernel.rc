@@ -119,7 +119,7 @@ on boot && property:persist.sys.stability.smartfocusio.v2=on
     write /sys/block/sda/queue/sfi_tag_limit 1
     write /sys/block/sda/queue/sfi_tag_limit_threshold 30
 on boot && property:persist.sys.stability.smartfocusio.v3=on
-    setprop persist.sys.stability.smartfocusio.apex on
+    setprop persist.sys.stability.smartfocusio.apex off
     write /proc/mikblockd_enable 1
 on property:persist.sys.stability.cpcmd=on
     write /dev/sys/fs/by-name/userdata/device_copy_enable 1

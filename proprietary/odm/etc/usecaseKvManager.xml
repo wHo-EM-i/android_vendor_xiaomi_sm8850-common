@@ -82,7 +82,7 @@
             <keys_and_values Direction="TX" Instance="3">
                 <!-- STREAMTX - PCM_RECORD -->
                 <graph_kv key="0xB1000000" value="0xB1000001"/>
-                <!-- INSTANCE - INSTANCE_1 -->
+                <!-- INSTANCE - INSTANCE_3 -->
                 <graph_kv key="0xAB000000" value="0x3"/>
             </keys_and_values>
         </stream>
@@ -1158,10 +1158,10 @@
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
                 <!-- DEVICEPP_RX - DEVICEPP_RX_VOICE_DEFAULT -->
                 <graph_kv key="0xAC000000" value="0xAC000005"/>
+            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_KARAOKE">
                 <!-- DEVICEPP_RX - DEVICEPP_RX_KARAOKE -->
                 <graph_kv key="0xAC000000" value="0xAC000300"/>
-            </keys_and_values>
             </keys_and_values>
         </devicepp>
         <!-- OUT Bluetooth BLE BROADCAST DevicePPs -->
@@ -1426,7 +1426,7 @@
             <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="surround_on">
                 <!-- DEVICETX - HANDSETMIC -->
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_SURROUND -->
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SURROUND -->
                 <graph_kv key="0xAD000000" value="0xAD000A00"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_ULTRA_LOW_LATENCY">
@@ -1487,11 +1487,19 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_RECORDING_DUALADC -->
                 <graph_kv key="0xAD000000" value="0xAD000200"/>
             </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER" CustomConfig="recorder-ozo">
+            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="dual-mic">
                 <!-- DEVICETX - SPEAKER_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000001"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
                 <graph_kv key="0xAD000000" value="0xAD000003"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER" CustomConfig="camcorder_wnd_ns">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_RECORDING_DUALADC -->
+                <graph_kv key="0xAD000000" value="0xAD000200"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_COMPRESSED" CustomConfig="quad-mic">
                 <!-- DEVICETX - SPEAKER_MIC -->
@@ -1510,14 +1518,6 @@
                 <graph_kv key="0xA3000000" value="0xA3000001"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_FFECNS -->
                 <graph_kv key="0xAD000000" value="0xAD000032"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER" CustomConfig="camcorder_zoom">
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER" CustomConfig="camcorder_wnd_ns">
-                <!-- DEVICETX - SPEAKER_MIC -->
-                <graph_kv key="0xA3000000" value="0xA3000001"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_RECORDING_DUALADC -->
-                <graph_kv key="0xAD000000" value="0xAD000200"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
                 <!-- DEVICETX - SPEAKER_MIC -->
@@ -1593,10 +1593,10 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_NN_SM -->
                 <graph_kv key="0xAD000000" value="0xAD000010"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="surround_on">>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="surround_on">
                 <!-- DEVICETX - SPEAKER_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000001"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_SURROUND -->
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SURROUND -->
                 <graph_kv key="0xAD000000" value="0xAD000A00"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
@@ -1721,7 +1721,7 @@
             <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="surround_on">
                 <!-- DEVICETX - USB_TX -->
                 <graph_kv key="0xA3000000" value="0xA3000005"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_SURROUND -->
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SURROUND -->
                 <graph_kv key="0xAD000000" value="0xAD000A00"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">

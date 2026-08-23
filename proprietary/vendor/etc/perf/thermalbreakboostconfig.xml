@@ -64,6 +64,17 @@
                 Target0="boost:1 cpu0:3552000 cpu6:4089600"
                 Target1="boost:1 cpu0:3552000 cpu6:4089600"
                 Target2="boost:1 cpu0:3552000 cpu6:4089600"/>
+            <Breakinfo Temperature="50000"
+                Target0="boost:1 cpu0:1900000 cpu6:1977000"
+                Target1="boost:1 cpu0:1900000 cpu6:1977000"
+                Target2="boost:1 cpu0:1900000 cpu6:1977000"/>
+        </Config>
+        <!--fast lauch break-->
+        <Config Id="0x00001081" Type="105" Scence="0">
+            <Breakinfo Temperature="25000"
+                Target0="boost:1 cpu0:3513600 cpu6:4262400 cpumask:ff"
+                Target1="boost:1 cpu0:3513600 cpu6:4262400 cpumask:ff"
+                Target2="boost:1 cpu0:3513600 cpu6:4262400 cpumask:ff"/>
         </Config>
         <!--App resume break-->
         <Config Id="0x00001082" Type="1, 2" Scence="0">
@@ -232,12 +243,20 @@
                 Target0="boost:1 cpu0:3552000 cpu6:4089600"
                 Target1="boost:1 cpu0:3552000 cpu6:4089600"
                 Target2="boost:1 cpu0:3552000 cpu6:4089600"/>
+            <Breakinfo Temperature="50000"
+                Target0="boost:1 cpu0:1900000 cpu6:1977000"
+                Target1="boost:1 cpu0:1900000 cpu6:1977000"
+                Target2="boost:1 cpu0:1900000 cpu6:1977000"/>
         </Config>
         <Config Process="com.android.camera">
             <Breakinfo Temperature="25000"
                 Target0="boost:1 cpu0:3552000 cpu6:4089600 cpumask:ff"
                 Target1="boost:1 cpu0:3552000 cpu6:4089600 cpumask:ff"
                 Target2="boost:1 cpu0:3552000 cpu6:4089600 cpumask:ff"/>
+            <Breakinfo Temperature="50000"
+                Target0="boost:1 cpu0:1900000 cpu6:1977000"
+                Target1="boost:1 cpu0:1900000 cpu6:1977000"
+                Target2="boost:1 cpu0:1900000 cpu6:1977000"/>
         </Config>
     </ProcessBreak>
 </ThermalBreakConfigs>
