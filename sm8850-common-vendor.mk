@@ -545,6 +545,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/ssg/c2pa_network_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/c2pa_network_config.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
+    vendor/xiaomi/sm8850-common/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/xiaomi/sm8850-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
@@ -1567,6 +1568,7 @@ PRODUCT_PACKAGES += \
     bttpi-saidl.xml \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
+    cacert-saidl.xml \
     dataconnection-saidl.xml \
     datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
